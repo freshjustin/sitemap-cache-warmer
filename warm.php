@@ -4,6 +4,7 @@ if(PHP_SAPI === 'cli' && $argc>1){
 }
 // Set configuration
 $config = include 'config.php';
+set_time_limit(300);
 
 // Include library
 include 'class/PHP_Warmer_Timer.class.php';
